@@ -1,0 +1,171 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.contenedor
+{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+.listado-imagen
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.persona
+{
+    padding: 10px;
+}
+
+.imagen
+{
+    flex: 0 0 calc(33.3% - 1rem);
+}
+
+.imagen:nth-child(10)
+{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.imagen:nth-child(11)
+{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.imagen:nth-child(12)
+{
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.pantalla
+{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+}
+
+/**Navegacion**/
+.navegacion a
+{   
+    padding-bottom: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@media(min-width: 768px)
+{
+    .navegacion a
+    {
+        display: inline;
+        margin-right: 2rem;
+    }
+}
+
+@media(min-width: 768px)
+{
+    .barra
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.barra
+{   
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.navegacion a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.barra h1
+{
+    font-weight: 300;
+}
+
+.barra h1 span
+{
+    font-weight: 700;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.barra a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.barra a h1
+{
+    padding-bottom: 3rem;
+}
+
+.pantalla p
+{
+    line-height: 0.9;
+    font-size: 2.2rem;
+}
+
+@media(min-width: 768px)
+{
+    .pantalla p
+    {
+        line-height: 0.5;
+    }
+}
+
+/**Descripcion del header**/
+.descripcion
+{
+    color: #ffffff;
+    margin-top: 20rem;
+    text-align: center;
+}
+
+.persona
+{
+    position: relative;
+    overflow: hidden;
+}
